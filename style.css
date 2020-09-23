@@ -7,7 +7,7 @@ body{
   font-family: 'open sans';
 }
 .fixed-top{
-  position: fixed;
+  position: sticky;
   top: 0;
   right: 0;
   left: 0;
@@ -90,4 +90,15 @@ ul {
     color: #EBEBEB;
     font-weight: 500;
     font-size: 1rem;
+}
+
+.parallax {
+  background-image: url("parallax1.jpg");
+
+  min-height: 700px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
