@@ -107,13 +107,16 @@ ul {
 .info-div{
   height:1000px;
   background-color:#EBEBEB;
+  color: #5F5858;
+  font-family: "roboto";
+  z-index: 12;
 }
 
 .superimp-light{
   color: #EBEBEB;
   font-family: "roboto";
   margin-top: 0;
-  z-index: 40;
+  z-index: 1;
   margin-bottom: 1rem;
 }
 
@@ -141,4 +144,20 @@ p.superimp-light{
   line-height: 2em;
   font-weight: 100;
   font-family: "open sans";
+}
+
+.info-div h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+.info-div h2{
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+p.superimp-dark{
+  color: #5F5858;
+}
+.superimp-dark a{
+  text-decoration: underline;
+  color: #5F5858;
 }
