@@ -92,6 +92,12 @@ ul {
     font-weight: 500;
     font-size: 1rem;
 }
+.nav-link:hover{
+  animation-duration: 0.5s;
+  animation-name: navhover;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 
 .parallax {
   background-image: url("parallax1.jpg");
@@ -168,4 +174,13 @@ p.superimp-dark{
 .attrib a {
     color: #5F5858;
     text-decoration: underline;
+}
+
+@keyframes navhover {
+    from{
+      color: #EBEBEB;
+    }
+    to{
+      color: #83B6C3;
+    }
 }

@@ -6,6 +6,7 @@ body{
   margin: 0px;
   text-align: left;
   font-family: 'open sans';
+  color: #EBEBEB;
 }
 .fixed-top{
   position: sticky;
@@ -94,6 +95,6 @@ ul {
 }
 
 .content{
-  background-color: #5f5858;
+  background-color: #353131;
   height: 1000px;
 }
