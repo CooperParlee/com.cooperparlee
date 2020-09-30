@@ -39,7 +39,7 @@ a{
   background-color: transparent;
 }
 
-.navbar-brand{
+a.navbar-brand{
   color: #EBEBEB;
   display: inline-block;
   padding-top: 0.5rem;
@@ -82,21 +82,22 @@ ul {
   padding-left: 0.5rem;
 }
 
-.nav-link {
+a.nav-link {
     display: block;
     padding-top: 0.25rem;
     padding-right: 1rem;
     padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    color: #EBEBEB;
+    padding-left: 1rem
     font-weight: 500;
     font-size: 1rem;
+    color: #EBEBEB;
 }
-.nav-link:hover{
-  animation-duration: 0.5s;
-  animation-name: navhover;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+a.nav-transition{
+  color: #EBEBEB;
+  transition: color 0.2s ease-in-out;
+}
+a.nav-link:hover{
+  color: #83B6C3;
 }
 
 .parallax {
@@ -175,12 +176,7 @@ p.superimp-dark{
     color: #5F5858;
     text-decoration: underline;
 }
-
-@keyframes navhover {
-    from{
-      color: #EBEBEB;
-    }
-    to{
-      color: #83B6C3;
-    }
+.content{
+  background-color: #353131;
+  height: 1000px;
 }
