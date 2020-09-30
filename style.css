@@ -157,7 +157,15 @@ p.superimp-light{
 p.superimp-dark{
   color: #5F5858;
 }
-.superimp-dark a{
-  text-decoration: underline;
+
+.attrib{
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
   color: #5F5858;
+}
+
+.attrib a {
+    color: #5F5858;
+    text-decoration: underline;
 }
