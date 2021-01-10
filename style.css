@@ -144,10 +144,11 @@ a.sub-nav-link:hover{
 }
 
 .parallax-text-block{
-  padding: 1.5rem;
+  padding: 0rem;
   margin: 0.0rem;
+  margin-right: 1.5rem;
   float: right;
-  top: 5rem;
+  top: 8rem;
   position: relative;
   background-color: rgba(0, 0, 0, 0.0);
 }
