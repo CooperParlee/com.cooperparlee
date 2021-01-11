@@ -1,0 +1,43 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.container {
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.content h1{
+  display: block;
+  font-size: 2.5rem;
+  font-family: "Segoe UI";
+  font-weight: 500;
+  color: #353131;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1.5rem!important;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.rich-text p{
+  font-size: 16px;
+  font-family: "Segoe UI";
+  font-weight: 400;
+  word-wrap: normal;
+  max-width: 100%;
+  line-height: 1.5;
+}
+
+.img-fit{
+  max-width:70%;
+  max-height:70%;
+}

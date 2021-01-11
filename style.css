@@ -109,7 +109,7 @@ a.sub-nav-link:hover{
 }
 
 .parallax {
-  background-image: url("parallax2020.png");
+  background-image: url("media/parallax2020.png");
 
   position: relative;
   background-attachment: fixed;
@@ -177,16 +177,12 @@ p.superimp-light{
 }
 
 .info-div h1 {
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  padding: 0.5em;
-  font-family: "Rubik";
+  font-family: "Segoe UI";
+  font-size: 60px;
   font-weight: 300;
-  font-style: normal;
-  font-size: 40px;
-  letter-spacing: .05em;
-  line-height: 1.4em;
-  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
 }
 .info-div h2{
   font-size: 2.5rem;
@@ -209,10 +205,6 @@ p.superimp-dark{
 .attrib a {
     color: #5F5858;
     text-decoration: underline;
-}
-.content{
-  background-color: #353131;
-  height: 1000px;
 }
 
 .footer{
