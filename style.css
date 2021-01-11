@@ -211,6 +211,20 @@ p.superimp-dark{
   background-color: #5F5858;
 }
 
+.footer p{
+  background-color: #5F5858;
+  font-size: 16px;
+  font-family: "Segoe UI";
+  color: #ebebeb;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .dropdown-content{
   display: none;
   position: absolute;
