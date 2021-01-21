@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contentstylized.css">
     <link rel="shortcut icon" href="favicon.png">
-    <!-- reference Moment.js library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js" integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
   </head>
   <body>
     <!--Navbar Start-->
@@ -39,7 +38,11 @@
     <!--Navbar End-->
     <div class="content container rich-text">
         <h1>About This Blog</h1>
-        <p id="time"></p>
+        <p id="time">asdf</p>
+        <script>
+            var modified = moment(document.lastModified);
+            document.getElementById("time").innerHTML = modified.format('MMMM Do YYYY, h:mm a');
+        </script>
         <img src="media/about.jpg" class="img-fit">
         <p>Hi, welcome to my site!</p>
         <p>I'm Cooper, a high school student at <a href="https://www.brewerhs.org/">Brewer High School</a>, working on personal projects in the fields of computer science, engineering and additive manufacturing. With the Brewer High School Cross Country, Indoor and Outdoor Track teams, I am a distance specialist, running the 1600 meter, 3200 meter, and 5K and, on occasion, the 800 meter when it suits me.</p>
@@ -53,10 +56,5 @@
     <div class="footer">
       <p>© 2020 Cooper Parlee</p>
     </div>
-    <script>
-      var modified = new Date(document.lastModified);
-      var modified-wrapped = moment.utc(modified);
-      document.getElementById("time").innerHTML = moment();
-    </script>
   </body>
 </html>
