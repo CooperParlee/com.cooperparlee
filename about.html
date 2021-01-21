@@ -6,8 +6,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contentstylized.css">
     <link rel="shortcut icon" href="favicon.png">
+    <!-- reference Moment.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js" integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ==" crossorigin="anonymous"></script>
   </head>
   <body>
+    <!--Navbar Start-->
     <nav class="navbar fixed-top">
         <a class="navbar-brand nav-transition" href="index.html">Cooper Parlee</a>
         <div class="align-middle">
@@ -16,25 +19,27 @@
               <div class="dropdown"><a class="nav-link nav-transition" href="portfolio.html">Portfolio</a>
               <div class="dropdown-content">
                 <a href="academics.html" class="sub-nav-link">Academics</a>
-                <a href="projects.html" class="sub-nav-link">Other Projects</a>
+                <a href="projects.html" class="sub-nav-link">Projects</a>
                 <a href="resume.html" class="sub-nav-link">View My Resume</a>
               </div>
               </div>
             </li>
             <li class="nav-item"><a class="nav-link nav-transition" href="about.html">About</a></li>
             <li class="nav-item">
-              <div class="dropdown"><a class="nav-link nav-transition" href="dev-experience.html">See My Code!</a>
+              <div class="dropdown"><a class="nav-link nav-transition" href="dev-experience.html">Programming</a>
               <div class="dropdown-content">
                 <a href="tgm.html" class="sub-nav-link">Minecraft Modding</a>
               </div>
               </div>
             </li>
-            <li class="nav-item"><a class="nav-link nav-transition" href="contact.html">Contact Me!</a></li>
+            <li class="nav-item"><a class="nav-link nav-transition" href="contact.html">Contact</a></li>
           </ul>
         </div>
     </nav>
+    <!--Navbar End-->
     <div class="content container rich-text">
-        <h1>About this blog</h1>
+        <h1>About This Blog</h1>
+        <p id="time"></p>
         <img src="media/about.jpg" class="img-fit">
         <p>Hi, welcome to my site!</p>
         <p>I'm Cooper, a high school student at <a href="https://www.brewerhs.org/">Brewer High School</a>, working on personal projects in the fields of computer science, engineering and additive manufacturing. With the Brewer High School Cross Country, Indoor and Outdoor Track teams, I am a distance specialist, running the 1600 meter, 3200 meter, and 5K and, on occasion, the 800 meter when it suits me.</p>
@@ -48,6 +53,10 @@
     <div class="footer">
       <p>© 2020 Cooper Parlee</p>
     </div>
-
+    <script>
+      var modified = new Date(document.lastModified);
+      var modified-wrapped = moment.utc(modified);
+      document.getElementById("time").innerHTML = moment();
+    </script>
   </body>
 </html>
