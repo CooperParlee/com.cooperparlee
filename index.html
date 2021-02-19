@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
-
+  <!--Navbar Begin-->
   <nav class="navbar navbar-expand-md navbar-dark bg-purple sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img src="faviconlg.png" alt="CP" width="50px" height="50px"></a>
@@ -17,14 +17,26 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
+        <!--<ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link active" href="#"> 
               About 
             </a> 
           </li>
-        </ul>
+        </ul>-->
         <ul class="navbar-nav nav-right ml-auto"> 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Portfolio
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Projects</a>
+              <a class="dropdown-item" href="#">Academics</a>
+              <a class="dropdown-item" href="#">Athletics</a>
+              <hr class="dropdown-divider">
+              <a class="dropdown-item" href="#">View My Resume</a>
+            </div>
+          </li>
           <li class="nav-item"> 
               <a class="nav-link" href="#"> 
                 About 
@@ -32,18 +44,17 @@
           </li> 
           <li class="nav-item"> 
               <a class="nav-link" href="#"> 
-                Contacts 
-              </a> 
-          </li> 
-          <li class="nav-item"> 
-              <a class="nav-link" href="#"> 
-                Settings 
+                Contact 
               </a> 
           </li> 
         </ul> 
       </div>
     </div>
   </nav>
+  <!--Navbar End-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>
