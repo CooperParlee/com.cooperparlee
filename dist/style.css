@@ -21,4 +21,8 @@ body {
 .bg-purple {
   background-color: #995FA3;
 }
+
+.navbar-nav {
+  margin-left: auto;
+}
 /*# sourceMappingURL=style.css.map */
