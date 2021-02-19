@@ -25,17 +25,4 @@ body {
 .nav-right {
   margin-left: auto;
 }
-
-.parallax1 {
-  background-image: url("media/parallax2020.png");
-  min-height: 800px;
-  position: relative;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-color: #c7ecee;
-  margin-bottom: 0;
-  border-radius: 0;
-}
 /*# sourceMappingURL=style.css.map */
