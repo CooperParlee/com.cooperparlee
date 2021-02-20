@@ -1,6 +1,21 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 $purple: #995FA3;
 $light-gray: #5F5858;
-$soft-white: #CCCCCC;
+$soft-white: #EBEBEB;
 $dark-gray: #353131;
 $orange: #B1740F;
 
+.btn-outline-contact {
+    font-weight: 600;
+    color: $soft-white;
+    border-color: $soft-white;
+    @include button-outline-variant($soft-white, $purple, $soft-white, $soft-white);
+}
+
+.btn-outline-thematic {
+    font-weight: 600;
+    color: $soft-white;
+    border-color: $soft-white;
+    @include button-outline-variant($purple, $soft-white, $purple, $purple);
+}
