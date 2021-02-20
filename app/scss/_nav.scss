@@ -1,6 +1,16 @@
+@import ".../node_modules/bootstrap/scss/bootstrap";
 .bg-purple {
     background-color: $purple;
 }
 .nav-right{
     margin-left: auto;
+}
+.btn-outline-contact {
+    font-weight: 600;
+    color: $soft-white;
+    border-color: $soft-white;
+}
+
+.btn-outline-contact {
+    @include button-outline-variant($purple, $soft-white, $purple, $purple);
 }
