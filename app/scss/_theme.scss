@@ -1,6 +1,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 $purple: #995FA3;
+$light-purple: #A471AD;
 $light-gray: #5F5858;
 $soft-white: #EBEBEB;
 $dark-gray: #353131;
@@ -18,4 +19,12 @@ $orange: #B1740F;
     color: $soft-white;
     border-color: $soft-white;
     @include button-outline-variant($purple, $soft-white, $purple, $purple);
+}
+
+.text-light{
+    color: $soft-white;
+}
+
+.bg-linear-purple{
+    background-image: linear-gradient($purple, $light-purple);
 }

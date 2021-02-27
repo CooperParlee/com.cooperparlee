@@ -11404,6 +11404,15 @@ fieldset:disabled .btn {
   background-color: transparent;
 }
 
+.text-light {
+  color: #EBEBEB;
+}
+
+.bg-linear-purple {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#995FA3), to(#A471AD));
+  background-image: linear-gradient(#995FA3, #A471AD);
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
