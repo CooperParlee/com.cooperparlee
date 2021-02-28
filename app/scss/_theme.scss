@@ -21,8 +21,25 @@ $orange: #B1740F;
     @include button-outline-variant($purple, $soft-white, $purple, $purple);
 }
 
-.text-light{
+.btn-thematic {
+    font-weight: 600;
     color: $soft-white;
+    border-color: $soft-white;
+    @include button-variant($purple, $soft-white);
+}
+
+.color-dark{
+    color: $dark-gray;
+}
+.color-purple{
+    color: $purple;
+}
+.color-white{
+    color: $soft-white;
+}
+
+.text-soft{
+    font-weight: 300;
 }
 
 .bg-linear-purple{

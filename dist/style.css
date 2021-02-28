@@ -11404,8 +11404,64 @@ fieldset:disabled .btn {
   background-color: transparent;
 }
 
-.text-light {
+.btn-thematic {
+  font-weight: 600;
   color: #EBEBEB;
+  border-color: #EBEBEB;
+  color: #fff;
+  background-color: #995FA3;
+  border-color: #EBEBEB;
+}
+
+.btn-thematic:hover {
+  color: #fff;
+  background-color: #82518b;
+  border-color: #bcbcbc;
+}
+
+.btn-check:focus + .btn-thematic, .btn-thematic:focus {
+  color: #fff;
+  background-color: #82518b;
+  border-color: #bcbcbc;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(238, 238, 238, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(238, 238, 238, 0.5);
+}
+
+.btn-check:checked + .btn-thematic,
+.btn-check:active + .btn-thematic, .btn-thematic:active, .btn-thematic.active,
+.show > .btn-thematic.dropdown-toggle {
+  color: #fff;
+  background-color: #7a4c82;
+  border-color: #b0b0b0;
+}
+
+.btn-check:checked + .btn-thematic:focus,
+.btn-check:active + .btn-thematic:focus, .btn-thematic:active:focus, .btn-thematic.active:focus,
+.show > .btn-thematic.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(238, 238, 238, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(238, 238, 238, 0.5);
+}
+
+.btn-thematic:disabled, .btn-thematic.disabled {
+  color: #fff;
+  background-color: #995FA3;
+  border-color: #EBEBEB;
+}
+
+.color-dark {
+  color: #353131;
+}
+
+.color-purple {
+  color: #995FA3;
+}
+
+.color-white {
+  color: #EBEBEB;
+}
+
+.text-soft {
+  font-weight: 300;
 }
 
 .bg-linear-purple {
@@ -11444,5 +11500,15 @@ body {
 
 .nav-link {
   color: #EBEBEB;
+}
+
+.info-cards {
+  background: #EBEBEB;
+}
+
+.subtitle {
+  font-weight: 200;
+  font-size: 1.1rem;
+  line-height: 1.85rem;
 }
 /*# sourceMappingURL=style.css.map */
