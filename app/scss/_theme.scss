@@ -7,7 +7,7 @@ $soft-white: #FFFFFF;
 $dark-gray: #353131;
 $orange: #B1740F;
 
-.btn-outline-contact {
+.btn-outline-light {
     font-weight: 600;
     color: $soft-white;
     border-color: $soft-white;
@@ -27,9 +27,18 @@ $orange: #B1740F;
     border-color: $soft-white;
     @include button-variant($purple, $soft-white);
 }
+.btn-light{
+    font-weight: 600;
+    color: $purple;
+    border-color: $purple;
+    @include button-variant($purple, $purple);
+}
 
 .color-dark{
     color: $dark-gray;
+}
+.color-orange{
+    color: $orange;
 }
 .color-purple{
     color: $purple;
@@ -37,11 +46,33 @@ $orange: #B1740F;
 .color-white{
     color: $soft-white;
 }
-
 .text-soft{
     font-weight: 300;
 }
-
+.btn-social{
+    background-color: $soft-white;
+}
+.bg-darkgray {
+    background-color: $dark-gray;
+}
+.bg-lightgray {
+    background-color: $light-gray;
+}
+.bg-purple {
+    background-color: $purple;
+}
 .bg-linear-purple{
     background-image: linear-gradient($purple, $light-purple);
 }
+ul.clean {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.btn-social-icon{
+    font-size: 1em;
+}
+hr {
+    border: 0;
+    border-top: 1px solid $soft-white;
+  }
