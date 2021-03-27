@@ -34,7 +34,7 @@
 						Portfolio
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="http://www.cooperparlee.com/articles.html">Projects</a>
+						<a class="dropdown-item" href="{% url 'articles' %}">Projects</a>
 						<a class="dropdown-item" href="#">Academics</a>
 						<a class="dropdown-item" href="#">Athletics</a>
 						<hr class="dropdown-divider">
@@ -42,7 +42,7 @@
 					</div>
 				</li>
 				<li class="nav-item"> 
-						<a class="nav-link" href="#about"> 
+						<a class="nav-link" href="#"> 
 						About 
 						</a> 
 				</li> 
@@ -55,7 +55,8 @@
 		</div>
 		</nav></header>
 		<!--Navbar End-->
-		
+		{% block content %}
+		{% endblock content %}
 		<footer class="m-0">
 			<div class="container-fluid bg-purple">
 					<div class="row text-center justify-content-center py-5 mx-3">
