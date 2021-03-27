@@ -5,16 +5,16 @@
 				<meta http-equiv="X-UA-Compatible" content="IE=edge">
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
 				<meta name="robots" content="noindex, follow">
-				<title>{{title}} - Cooper Parlee</title>
+				<title>Cooper Parlee - Articles</title>
 				<meta name="description" content="type a description here">
 				<link rel='icon' href='favicon.png' type='image/png' sizes="16x16" />
 				<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-				<link rel="stylesheet" href="style.css">
+				<link rel="stylesheet" href="dist/style.css">
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 		</head>
-	<body>
-	<!--Navbar Begin-->
-	<header><nav class="navbar navbar-expand-md navbar-dark bg-purple fixed-top">
+<body>
+		<!--Navbar Begin-->
+		<header class="mb-5"><nav class="navbar navbar-expand-md navbar-dark bg-purple fixed-top">
 		<div class="container-fluid px-4">
 			<a class="navbar-brand" href="index.html"><img src="faviconlg.png" alt="CP" width="50px" height="50px"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,40 +22,51 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<!--<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link active" href="#"> 
-						About 
-					</a> 
-				</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#"> 
+							About 
+						</a> 
+					</li>
 				</ul>-->
 				<ul class="navbar-nav nav-right ml-auto"> 
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Portfolio
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="http://www.cooperparlee.com/articles.html">Projects</a>
-						<a class="dropdown-item" href="#">Academics</a>
-						<a class="dropdown-item" href="#">Athletics</a>
-						<hr class="dropdown-divider">
-						<a class="dropdown-item" href="#">View My Resume</a>
-					</div>
-				</li>
-				<li class="nav-item"> 
-						<a class="nav-link" href="#about"> 
-						About 
-						</a> 
-				</li> 
-				<li class="nav-item bg-purple"> 
-					<!--<button type="button" class="btn contact-btn d-lg-inline-block my-2 my-md-0 ms-md-3">Contact</button>-->
-					<button type="button" class="btn d-lg-inline-block my-2 my-md-0 ms-md-3 btn-outline-light">Contact</button>
-				</li> 
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Portfolio
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="http://www.cooperparlee.com/articles.html">Projects</a>
+							<a class="dropdown-item" href="#">Academics</a>
+							<a class="dropdown-item" href="#">Athletics</a>
+							<hr class="dropdown-divider">
+							<a class="dropdown-item" href="#">View My Resume</a>
+						</div>
+					</li>
+					<li class="nav-item"> 
+							<a class="nav-link" href="#"> 
+								About 
+							</a> 
+					</li> 
+					<li class="nav-item bg-purple"> 
+						<!--<button type="button" class="btn contact-btn d-lg-inline-block my-2 my-md-0 ms-md-3">Contact</button>-->
+						<button type="button" class="btn d-lg-inline-block my-2 my-md-0 ms-md-3 btn-outline-light">Contact</button>
+					</li> 
 				</ul> 
 			</div>
 		</div>
 		</nav></header>
 		<!--Navbar End-->
-		
+		<div class="container my-4">
+				<div class="row">
+						<div class="col">
+								<h1 class="article-head">Articles</h1>	
+						</div>
+				</div>
+				<article><div class="row my-4">
+						<div class="col-md-9 left_body">
+								
+						</div>
+				</div></article>
+		</div>
 		<footer class="m-0">
 			<div class="container-fluid bg-purple">
 					<div class="row text-center justify-content-center py-5 mx-3">
@@ -96,7 +107,7 @@
 						<p></p>
 						<h4>Like to Run?</h4>
 						<p>Follow me on Strava - a platform for runners!</p>
-						<a class="btn btn-thematic btn-social-icon align-content-center mx-0" href="https://www.strava.com/athletes/43999076" target="_blank" role="button"><img src="dist/media/strava.png" class="color-orange" alt="strava icon"/></a>
+						<a class="btn btn-thematic btn-social-icon align-content-center mx-0" href="https://www.strava.com/athletes/43999076" target="_blank" role="button"><img src="dist/media/strava.png" class="color-orange"/></a>
 						</div>
 					</div>
 					<hr class="mx-5">
@@ -105,9 +116,5 @@
 					</div>
 				</div>
 		</footer>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-		</body>
+</body>
 </html>
