@@ -1,1 +1,23 @@
-{{post.content}}
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<div class="container mb-4 mt-5">
+    <div class="row">
+        <div class="col">
+            <h1 class="article-head">{{post.title}}</h1>
+            <p class="mb-0" id="time">Published -- {{post.updated_on}} by {{post.author}}</p>
+        </div>
+    </div>
+    <article><div class="row my-4">
+        <div class="col-md-9 left_body">
+            <div class="container mb-4 ps-0">
+                <div class="rich-text">
+                    <p>
+                        {{post.content}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div></article>
+</div>
+{%endblock content%}
