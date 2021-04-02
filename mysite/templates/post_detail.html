@@ -8,12 +8,12 @@
             <p class="mb-0" id="time">Published -- {{post.updated_on}} by {{post.author}}</p>
         </div>
     </div>
-    <article><div class="row my-4">
+    <article><div class="row mb-4">
         <div class="col-md-9 left_body">
             <div class="container mb-4 ps-0">
                 <div class="rich-text">
                     <p>
-                        {{post.content}}
+                        {{post.content|linebreaks}}
                     </p>
                 </div>
             </div>
