@@ -9,6 +9,9 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h2 class="card-title">{{post.title}}</h2>
+                    {% if post.header_image %}
+                        <img class="card-img-top" src="{{post.header_image.url}}" alt="Card image cap">
+                    {% endif %}
                     <p class="card-text">{{post.description|slice:"200"}}</p>
                     <a class = "btn btn-thematic" href="{% url 'blog:post_detail' post.slug %}">Read More!</a>
                 </div> 

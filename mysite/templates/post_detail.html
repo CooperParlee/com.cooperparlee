@@ -10,11 +10,14 @@
     </div>
     <article><div class="row mb-4">
         <div class="col-md-9 left_body">
+            {% if post.header_image %}
+            <div class="container mb-4 ps-0">
+                <img class="card-img-top" src="{{post.header_image.url}}" alt="Card image cap">
+            </div>
+            {% endif %}
             <div class="container mb-4 ps-0">
                 <div class="rich-text">
-                    <p>
-                        {{post.content|safe}}
-                    </p>
+                    {{post.content|safe}}
                 </div>
             </div>
         </div>

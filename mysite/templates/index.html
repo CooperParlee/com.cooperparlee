@@ -72,7 +72,9 @@
         <div class="row px-4 justify-content-center">
             {% for post in posts %}
                 <div class="col-4 mx-3 my-2 card" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                    {% if post.header_image %}
+                        <img class="card-img-top" src="{{post.header_image.url}}" alt="Card image cap">
+                    {% endif %}
                     <div class="card-body">
                         <h5 class="card-title">{{post}}</h5>
                         <p class="card-text">{{post.description}}</p>
