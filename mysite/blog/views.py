@@ -3,7 +3,7 @@ from .models import Post
 
 # Create your views here.
 class PostList (generic.ListView):
-    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    queryset = Post.objects.filter(status=1, hidden=False).order_by('-created_on')
     def get_context_data (self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Articles'

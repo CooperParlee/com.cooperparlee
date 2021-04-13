@@ -9,7 +9,7 @@ def index(request):
     template_name = 'index.html'
     template = loader.get_template(template_name)
     posts = {}
-    queryset = Post.objects.filter(status=1).order_by('-created_on')[:3]
+    queryset = Post.objects.filter(status=1, hidden=False).order_by('-created_on')[:3]
 
     print(queryset)
 
