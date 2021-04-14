@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<div class ="container my-4">
+    <div class="row">
+        <section class = "my-4 col-md-9 left-body">
+            <h1 class="mt-5 mb-4">Articles</h1>
+            {% for post in post_list %}
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">{{post.title}}</h2>
+                    {% if post.header_image %}
+                        <img class="card-img-top" src="{{post.header_image.url}}" alt="Card image cap">
+                    {% endif %}
+                    <p class="card-text">{{post.description|slice:"200"}}</p>
+                    <a class = "btn btn-thematic" href="{% url 'blog:post_detail' post.slug %}">Read More!</a>
+                </div> 
+                <div class="card-footer text-muted">
+                    Posted on {{post.updated_on}} by {{post.author}}
+                </div>
+            </div>
+            {%endfor %}
+        </section>
+    </div>
+</div>
+{%endblock content%}
