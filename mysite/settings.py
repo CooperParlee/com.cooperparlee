@@ -31,7 +31,7 @@ SECRET_KEY = str(os.getenv('SECRET_KEY'))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['cooperparlee.com', '104.236.217.43']
+ALLOWED_HOSTS = ['localhost', '104.236.217.43']
 
 
 # Application definition
