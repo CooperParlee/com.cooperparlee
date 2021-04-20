@@ -15,7 +15,7 @@ def index(request):
 
     context = {
         'title': 'Home',
-        'description': 'Welcome to cooperparlee.com, my personal-website portfolio!',
+        'description': "I'm Cooper Parlee and welcome to my personal-website portfolio!",
         'posts': queryset,
     }
     return HttpResponse(template.render(context, request))
