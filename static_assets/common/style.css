@@ -11604,6 +11604,11 @@ div.rich-text img {
   height: auto;
 }
 
+div.rich-text li {
+  line-height: 1.5rem;
+  margin-bottom: 0.33rem;
+}
+
 #time {
   color: #5F5858;
   font-size: 0.8rem;

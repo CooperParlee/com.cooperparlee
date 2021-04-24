@@ -11,6 +11,10 @@ div.rich-text img {
     width: 100%;
     height: auto;
 }
+div.rich-text li {
+    line-height: 1.5rem;
+    margin-bottom: 0.33rem;
+}
 
 #time{
     color: $light-gray;
