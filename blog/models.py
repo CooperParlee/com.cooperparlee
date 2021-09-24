@@ -29,6 +29,7 @@ class Post (models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     category = models.IntegerField(choices=CATEGORIES, default=0)
     hidden = models.BooleanField(default=False, null=False)
+    show_comments = models.BooleanField(default=True, null=False)
 
     class Meta:
         ordering = ['-created_on']

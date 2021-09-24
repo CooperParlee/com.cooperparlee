@@ -22,6 +22,7 @@
             </div>
         </div>
     </div></article>
+    {% if post.show_comments %}
     <div id="graphcomment"></div>
     <script type="text/javascript">
 
@@ -44,6 +45,6 @@
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
     })();
 
-    </script>
+    </script>{% endif %}
 </div>
 {%endblock content%}
